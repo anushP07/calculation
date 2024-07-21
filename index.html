@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BH-Series Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BH-Series Motor Vehicle Tax Calculator</h1>
+        <form id="taxForm">
+            <label for="invoicePrice">Invoice Price (in Rs):</label>
+            <input type="number" id="invoicePrice" name="invoicePrice" required>
+            <button type="button" onclick="calculateTax()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
