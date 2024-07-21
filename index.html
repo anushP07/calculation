@@ -8,16 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>BH-Series Registration Tax Calculator</h1>
+        <h1>BH-Series Motor Vehicle Tax Calculator</h1>
         <form id="taxForm">
-            <label for="invoicePrice">Enter the Invoice Price of the Vehicle (in Rs):</label>
+            <label for="invoicePrice">Invoice Price (in Rs):</label>
             <input type="number" id="invoicePrice" name="invoicePrice" required>
-            <button type="submit">Calculate Tax</button>
+            <button type="button" onclick="calculateTax()">Calculate</button>
         </form>
-        <div id="result" class="result">
-            <p id="taxAmount"></p>
-            <p id="explanation"></p>
-        </div>
+        <div id="result"></div>
     </div>
     <script src="script.js"></script>
 </body>
